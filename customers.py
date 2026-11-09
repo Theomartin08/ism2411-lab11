@@ -1,3 +1,15 @@
+# REFLECTION
+# 1. I would use .get() when a missing key is normal and the program can keep
+#    going with a fallback, like a customer with no email on file or an unknown
+#    tier that should default to a 0 discount. I would use bracket notation when
+#    the key has to exist, because a KeyError tells me right away that the data
+#    is wrong instead of hiding the problem. My rule of thumb is .get() for
+#    optional data and brackets for required data.
+# 2. Exercise 8 reminds me of a PivotTable or SUMIF in Excel, where sales are
+#    grouped by region and totaled. The Python version is more useful for large
+#    datasets because it runs the same way on millions of rows without freezing
+#    or manual clicking, and I can rerun it on new data with one command.
+
 # Exercise 1: One customer
 customer = {
     "name": "Alice",
